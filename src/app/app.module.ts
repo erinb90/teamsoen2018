@@ -10,6 +10,7 @@ import { DepositCheck } from './deposit_check/deposit_check.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import {AccountsService} from './accounts/accounts.service';
 import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {HttpClientModule} from '@angular/common/http';
     DepositCheck,
     Withdrawal,
     AccountsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
