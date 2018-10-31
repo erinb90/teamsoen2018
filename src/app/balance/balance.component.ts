@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {AccountsService} from '../accounts/accounts.service';
-import {Account} from '../accounts/account';
+import { Component, OnInit } from '@angular/core';
+import { AccountsService } from '../accounts/accounts.service';
+import { Account } from '../accounts/account';
 import { Statement } from '../../assets/Statement'
 
 @Component({
@@ -23,5 +23,16 @@ export class Balance implements OnInit {
     this.accountService.getUserAccount(this.userId).subscribe(res => {
       this.account = Account.toAccount(res[0]);
     });
+
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+    this.statements.push(new Statement());
+
+    console.log(this.statements);
   }
 }

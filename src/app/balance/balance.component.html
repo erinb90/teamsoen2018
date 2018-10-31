@@ -3,7 +3,7 @@
     <h1>
       Welcome to balance!
     </h1>
-    <h2 style="text-align:left">Proof that you're broke  AF</h2>
+    <h2 style="text-align:left">Proof that you're broke AF</h2>
     <p>Current Balance: ${{account?.balance}}</p>
     <table>
       <tr>
@@ -12,7 +12,7 @@
         <th>Description</th>
         <th>Amount</th>
       </tr>
-      <tr ng-repeat="balance in statements">
+      <tr *ngFor="let balance of statements; let i = index">
         <th>{{balance.Date}}</th>
         <th>{{balance.Action}}</th>
         <th>{{balance.Description}}</th>
