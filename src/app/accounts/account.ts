@@ -10,7 +10,7 @@ export class Account {
   }
 
   static toAccount(result) {
-    return new Account(result._id, result.userID, result.balance);
+    return new Account(result._id, result.userID, Number(result.balance));
   }
 }
 

@@ -18,6 +18,13 @@ MongoClient.connect('mongodb://admin:teamsoen18@ds147073.mlab.com:47073/team-soe
       res.send(results)
     })
   });
+
+  app.get('/api/accounts/:id', (req, res) => {
+    let id = req.params.id;
+    var cursor = db.collection('accounts').find({userID: id}).toArray(function(err, results) {
+      res.send(results)
+    })
+  });
 });
 
 const cors = require('cors');

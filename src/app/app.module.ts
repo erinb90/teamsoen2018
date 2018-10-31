@@ -11,6 +11,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import {AccountsService} from './accounts/accounts.service';
 import {HttpClientModule} from '@angular/common/http';
 import { Y_U_Broke } from './huehuehue/invalid.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Y_U_Broke } from './huehuehue/invalid.component';
     Withdrawal,
     Y_U_Broke,
     AccountsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
