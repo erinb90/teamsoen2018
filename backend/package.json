@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/erinb90/teamsoen2018#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "mongodb": "^3.1.8",
