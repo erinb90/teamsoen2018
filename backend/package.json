@@ -1,0 +1,26 @@
+{
+  "name": "teamsoenbackend",
+  "version": "1.0.0",
+  "description": "team soen",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinb90/teamsoen2018.git"
+  },
+  "keywords": [
+    "teamsoen"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinb90/teamsoen2018/issues"
+  },
+  "homepage": "https://github.com/erinb90/teamsoen2018#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
