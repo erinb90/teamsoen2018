@@ -3,8 +3,9 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <app-login (output)="isLoggedIn = true"></app-login>
 </div>
-<div>
+<div *ngIf="isLoggedIn">
   <ul>
       <li><a routerLink="/balance">Balance</a></li>
       <li><a routerLink="/deposit">Deposit</a></li>
