@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Statement } from '../../assets/Statement'
 
 @Component({
   selector: 'balance',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class Balance {
   title = 'balance';
+  statements: Statement[] = new Array<Statement>();
 }
